@@ -1,0 +1,54 @@
+import React from 'react'
+import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom'
+
+const NavBar = () => {
+  
+    return (
+      <div>
+              <nav className="navbar navbar-expand-lg navbar-light bg-danger fixed-top">
+  <div className="container-fluid">
+   <strong> <Link className="navbar-brand text-warning fs-2"  to="/"> GlobalNews</Link></strong>
+   
+    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon"></span>
+    </button>
+    <div className="collapse navbar-collapse" id="navbarNav">
+      <ul className="navbar-nav text-strong ">
+        <li className="nav-item text-light">
+          <Link className="nav-link active  " aria-current="page" to="/general">Home</Link>
+        </li>
+        <li className="nav-item">
+          <Link className="nav-link " to="/business">Business</Link>
+        </li>
+        <li className="nav-item">
+          <Link className="nav-link" to="/entertainment">Entertainment</Link>
+        </li>
+        <li className="nav-item">
+          <Link className="nav-link" to="/general">General</Link>
+        </li>
+        <li className="nav-item">
+          <Link className="nav-link" to="/health">Health</Link>
+        </li>
+        <li className="nav-item">
+          <Link className="nav-link" to="/science">Science</Link>
+        </li>
+        <li className="nav-item">
+          <Link className="nav-link" to="/sports">Sports</Link>
+        </li>
+        <li className="nav-item">
+          <Link className="nav-link" to="/technology">Technology</Link>
+        </li>
+       
+        
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+      </div>
+    )
+  
+}
+
+export default NavBar
